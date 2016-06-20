@@ -13,11 +13,18 @@ class Lotto
   end
 
   def display_ticket
-    @ticket.display
+    @ticket.display.reverse 
   end
+
+
+  def empty?
+    @size == 0
+  end 
+
 end
 
 lotto_sim = Lotto.new
 
 puts "Your ticket is......"
 lotto_sim.display_ticket
+
